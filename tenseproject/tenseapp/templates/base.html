@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    {% block title %}
+    
+    {% endblock %}
+    <!--
+    <title>Tense</title>
+    -->
+    <style>
+      #p1 {
+      color: red;
+      background-color: lightgray;
+      }
+      #p2 {
+      color: blue;
+      font-style: italic;
+      text-decoration: underline;
+      }
+
+      #ph1 {
+        color: green;
+        font-size: 30pt;
+        font-weight: bold;
+      }
+
+      #ph2_pre {
+        text-align:center; 
+        background: yellow; 
+        color: black;
+        font-size: 25pt;
+        font-weight: bold;
+      }
+
+      #ph2_pre_test {
+        /*เส้น สี ความหนา ของขอบ*/
+        border: double 10px;
+        background-color: yellow;
+        border-color: red;
+        border-width: thick;
+        /* ทำความโค้งของเส้นขอบ  
+        border-radius: 10px;
+        vertical-align: middle;
+        display: table-cell;*/ 
+        /*ความกว้าง , ความยาว , padding , margin*/
+        margin:auto;
+        padding: 10px;
+        width: 450px;
+        height: 70px;
+
+        /* ทำความโค้งของเส้นขอบ และให้ทั้งขอบอยู่กลาง center*/
+        border-radius: 10px;
+        vertical-align: middle;     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        /*ตำแหน่งของตัวอักษร*/
+        text-align: center;
+        text-decoration: none;
+        
+        /*ประเภทตัวอักษร และ ขนาด*/
+        font-weight: bold;
+        font-size: 3rem;
+        font-family: 'CordiaUPC';
+      }
+
+      #ph4_1 {
+        color:blue;       
+        font-weight: bold;
+        font-size: 3rem;
+        font-family: 'CordiaUPC';
+      }
+
+      #ph4_1_test{
+        background-color: grey;
+        color: blue;
+        width: 410px;
+        height: 32px;
+        border-radius: 10px;
+        text-align: center;
+        vertical-align: middle;
+        display: table-cell;
+        text-decoration: none;
+     
+        font-weight: bold;
+        font-size: 3rem;
+        font-family: 'CordiaUPC';
+      }
+
+      #ph4_2 {
+        color:green;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 2rem;
+        font-family: 'Times New Roman';
+      }
+
+      #ph4_2_positive {
+        color:green;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 2rem;
+        font-family: 'Times New Roman';
+      }
+
+      #ph4_2_negative {
+        color:darkred;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 2rem;
+        font-family: 'Times New Roman';
+      }
+
+      #ph4_2_question {
+        color: blue;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 2rem;
+        font-family: 'Times New Roman';
+      }
+
+      #ph4_3 {
+        color:palevioletred;
+        font-weight: bold;
+        text-indent: 50px;
+        font-size: 2rem;
+        font-family: 'Tahoma';
+      }
+
+      #ph4_3_r {
+        color:palevioletred;
+        font-weight: bold;
+        font-size: 2rem;
+        font-family: 'Tahoma';
+        text-align: right;
+      }
+      
+      #ph4_4 {
+        color:red;
+        font-size: 20pt;
+        font-weight: bold;
+      }
+
+      #ph3_1 {
+        color:blue;
+        font-size: 19pt;
+        font-style: italic;
+      }
+
+      #ph3_1_r {
+        color:blue;
+        font-size: 19pt;
+        font-style: italic;
+        text-align: right;
+      }
+
+      #ph3_2 {
+        color:red;
+        font-size: 19pt;
+        font-weight: bold;
+      }
+
+      #ph3_2_r {
+        color:red;
+        font-size: 19pt;
+        font-weight: bold;
+        text-align: right;
+      }
+
+
+      #ph3_3 {
+        color:green;
+        font-size: 19pt;
+        font-style: italic;
+      }
+
+      #ph3_4 {
+        color:darkmagenta;
+        font-size: 19pt;
+        font-weight: bold;
+      }
+
+      #ph3_5 {
+        color:red;
+        font-size: 19pt;
+        font-weight: bold;
+      }
+
+      #ph3_6 {
+        color:blueviolet;
+        font-size: 19pt;
+        font-weight: bold;
+      }
+
+      #ph3_7 {
+        color:green;
+        font-size: 15pt;
+        font-style: italic;
+        font-weight: bold;
+      }
+      
+      #img1 {
+      float: left;
+      margin-right: 10px;
+      }
+
+      #img2 {
+      float: right;
+      }
+
+      #bottom_r {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      }
+
+      .float-container {
+      border: 3px solid #fff;
+      padding: 20px;
+      }
+
+      .float-child {
+      width: 50%;
+      float: left;
+      padding: 20px;
+      }  
+
+      #ph2_past_test {
+        /*เส้น สี ความหนา ของขอบ*/
+        border: double 10px;
+        background-color: red;
+        border-color: greenyellow;
+        border-width: thick;
+        /* ทำความโค้งของเส้นขอบ  
+        border-radius: 10px;
+        vertical-align: middle;
+        display: table-cell;*/ 
+        /*ความกว้าง , ความยาว , padding , margin*/
+        margin:auto;
+        padding: 10px;
+        width: 450px;
+        height: 70px;
+
+        /* ทำความโค้งของเส้นขอบ และให้ทั้งขอบอยู่กลาง center*/
+        border-radius: 10px;
+        vertical-align: middle;     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        /*ตำแหน่งของตัวอักษร*/
+        text-align: center;
+        text-decoration: none;
+        
+        /*ประเภทตัวอักษร และ ขนาด*/
+        font-weight: bold;
+        font-size: 3rem;
+        font-family: 'CordiaUPC';
+      }
+
+      /*
+      div {
+      background: skyblue;
+      text-align: center;
+      border: solid 2px red;
+      width: 100px;
+      height: 50px;
+      position: absolute;
+      }*/
+      /*
+      #img2 {
+      float: right;
+      margin-left: 10px;
+      }*/
+      /*
+      .float-container {         #class float-container เป็น Parent
+      border: 3px solid #fff;
+      padding: 20px;
+      }
+
+      .float-child {            #class float-child เป็น child
+      width: 50%;
+      float: left;
+      padding: 20px;
+      border: 2px solid red;
+      } */
+
+      
+
+    </style>
+    <!--
+    <style>
+      .bold-text { font-weight: bold; }
+      .font-style-italic { font-style: italic; }
+    </style>
+
+    <style>
+      .bold { font-weight: bold; }
+      .italic { font-style: italic; }
+      .underline { text-decoration: underline; }
+    </style>
+
+    Link:
+    #ยังไม่เคยเยี่ยมชม
+    a:link { color: blue; }
+    
+    #เยี่ยมชมแล้ว
+    a:visited { color: purple; }
+
+    -->
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-danger" href="/">Golf-Python-Django</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link bg-success text-white" aria-current="page" href="/index">English Tense</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/present">present tense</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/past">past tense</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/future">future tense</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/about">about</a>
+              </li>
+
+            </div>
+        </div>
+      </nav>
+
+      <div class="container my-2">
+        {% block content %}
+       
+        {% endblock %}
+    </div>
+    
+</body>
+</html>

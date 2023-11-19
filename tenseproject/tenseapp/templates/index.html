@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% load static %} 
+
+{% block title %}
+    <title>English Tense</title>
+{% endblock %}
+
+{% block content %}
+    <h1 style="color: green;">Hi Golf Natthaphat</h1>
+    <hr>
+    
+    <div><!--Link-->
+        <hr>
+        <p id="ph3_7">
+        <a href="/index"; style="color:green">English Tense></a>
+        <a href="/present"; id="ph3_7">Present Tense></a>
+        <a href="/past"; id="ph3_7">Past Tense></a>
+        <a href="/future"; id="ph3_7">Future Tense></a>
+        <a href="/about"; style="color:blueviolet">About></a>
+        </p>
+        <hr>
+
+        <div class="float-container">
+
+            <div class="float-child">
+            <img src="{% static '/images/golf.jpg' %}" alt="My image" id="img1" class="rounded-circle" class="img-fluid"> <!--My Picture-->
+            <div > <!--div element has p elements (Text Elements)-->
+                <p>++++++++++++++++++++++++++++++</p>
+                <p id="ph4_3">@My Profile@</p>
+                <p id="ph3_1">Mr. Natthaphat Jirathanathit.</p>
+                <p id="ph3_2">Nick Name : Golf.</p>  
+                <p id="ph3_3">I Like Coding or Programming as hobby.</p>
+                <p>++++++++++++++++++++++++++++++++++++++++</p>
+            </div>
+            </div>
+        
+            <div class="float-child">
+            <img src="{% static '/images/choke-dee.jpg' %}" alt="My cat" id="img2" class="rounded-circle" class="img-fluid"> <!--My Cat Picture-->
+            <div> 
+                <p style="text-align: right;">++++++++++++++++++++++++++++++</p> 
+                <p id="ph4_3_r">@My Cat@</p>
+                <p id="ph3_1_r">Name : Choke-Dee</p>
+                <p id="ph3_2_r">Nick Name : สุดยอดดวงใจ</p>
+                <p style="text-align: right;">++++++++++++++++++++++++++++++</p>
+            </div> 
+            </div>
+
+        </div>
+        <br>
+        <div class="text-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7n3pI5PVeAU?si=foK6Om8rxkDBtmWx" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="alert alert-info alert-dismissible">
+            <h4 style="color:green; 
+                font-weight: bold;
+                font-style: italic;
+                font-size: 2rem;
+                font-family: 'Times New Roman';
+                text-align: center">
+                <i>Alert โชคดี สุดยอดดวงใจ</i></h4>
+            <div class="text-center">   
+            <button class="close" data-dismiss="alert"
+            aria-hidden="true">&times;</button>
+            </div> 
+        </div>
+
+        <!--
+            <div class="float-container">
+
+            <div class="float-child">
+                <div class="green">Float Column 1</div>
+            </div>
+            
+            <div class="float-child">
+                <div class="blue">Float Column 2</div>
+            </div>
+            
+            </div>
+        -->
+
+        <!--
+        <img src="{% static '/images/golf.jpg' %}" alt="My image" id="img1">
+        <div >
+            <p>++++++++++++++++++++++++++++++</p>
+            <p id="ph4_3">@My Profile@</p>
+            <p id="ph3_1">Mr. Natthaphat Jirathanathit.</p>
+            <p id="ph3_2">Nick Name : Golf.</p>  
+            <p id="ph3_3">I Like Coding or Programming as hobby.</p>
+            <br style="clear: left"><br>
+        </div>
+        -->
+
+        <!--
+            <div class="float-child">
+            <div id="bottom_r"> #div element has p elements (Text Elements)
+                <p>++++++++++++++++++++++++++++++</p>
+                <img src="{% static '/images/choke-dee.jpg' %}" alt="My cat" id="img2"> #My Cat Picture
+                <p>++++++++++++++++++++++++++++++</p> 
+                <p id="ph4_3_r">@My Cat@</p>
+                <p id="ph3_1_r">Name : Choke-Dee</p>
+                <p id="ph3_2_r">Nick Name : สุดยอดดวงใจ</p>  
+            </div>
+            </div>
+        -->
+
+    </div>
+
+    
+{% endblock %}
+
+<!--    
+{% load static %} #Load from static folder
+<img src="{% static '/images/golf.jpg' %}" alt="My image">   #show picture
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

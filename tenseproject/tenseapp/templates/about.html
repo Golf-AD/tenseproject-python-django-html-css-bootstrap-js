@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>English Tense</title>
+{% endblock %}
+
+{% block content %}
+
+<style>
+    .container {display: grid; gap: 4px; color: whitesmoke;
+       grid-template-columns: auto auto auto;}
+    /*
+    .container {display: grid; gap: 4px; background-color: peru; color: whitesmoke;
+       grid-template-columns: auto auto auto;}
+    .container > div {background-color: whitesmoke; padding: 10px; text-align: center;}
+    */    
+</style>
+
+    <div row>
+        <div>
+            <h1 style="color: green;">My Profile</h1>
+            <h2 style="background-color: blue; color: yellow;"> I am Natthaphat {Golf}; Single; Male!!!</h2>
+            <h3 style="color: red"> Live in Bangkok Thailand.</h3>
+        </div> 
+
+        <!--
+        <div class="column">
+            <h3 style="color: darkolivegreen;">The Location near me:</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.1098848807724!2d100.41789607386112!3d13.651079099619968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2bd21031642bb%3A0x888cd3f34291c5cc!2sBig%20C%20Supercenter%20Rama%202%20Branch%202!5e0!3m2!1sen!2sth!4v1696236105172!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="column">
+            <h3 style="color: darkolivegreen;">BigC Rama2 Branch2:</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6h6K39BVSbM?si=YicxZtGlcDAG5opB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        -->
+
+        <div class="container">
+            <div>
+                <h3 style="color: darkolivegreen;">The Location near me:</h3>
+                <p style="text-align:left">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.1098848807724!2d100.41789607386112!3d13.651079099619968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2bd21031642bb%3A0x888cd3f34291c5cc!2sBig%20C%20Supercenter%20Rama%202%20Branch%202!5e0!3m2!1sen!2sth!4v1696236105172!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </p>
+            </div>
+    
+            <div>
+                <h3 style="color: darkolivegreen;">BigC Rama2 Branch2:</h3>
+                <p style="text-align:right">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6h6K39BVSbM?si=YicxZtGlcDAG5opB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </p>
+            </div>  
+        </div>
+
+
+
+
+
+        <div><!--Link-->
+            <hr>
+            <p id="ph3_7">
+            <a href="/index"; style="color:green">English Tense></a>
+            <a href="/present"; id="ph3_7">Present Tense></a>
+            <a href="/past"; id="ph3_7">Past Tense></a>
+            <a href="/future"; id="ph3_7">Future Tense></a>
+            </p>
+            <hr>
+        </div>
+    </div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
